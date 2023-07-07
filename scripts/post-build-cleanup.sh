@@ -28,7 +28,7 @@ rm -rf /opt/nodejs/bin/npm
 rm -rf /opt/nodejs/lib/node_modules/npm/
 
 # remove os dependencies
-apt-get purge -y --auto-remove apt-transport-https build-essential libarchive-tools bzip2 ca-certificates curl git python
+apt-get purge -y --auto-remove apt-transport-https build-essential libarchive-tools bzip2 ca-certificates curl git python3 python-is-python3
 apt-get -y autoremove
 apt-get -y clean
 apt-get -y autoclean

@@ -6,7 +6,7 @@
 Add the following to a `Dockerfile` in the root of your app:
 
 ```Dockerfile
-FROM jshimko/meteor-launchpad:latest
+FROM okamitechnologies/meteor-launchpad:latest
 ```
 
 Then you can build the image with:
@@ -109,7 +109,7 @@ docker build --build-arg NPM_TOKEN="<your token>" -t myorg/myapp:latest .
 You can optionally avoid downloading Meteor every time when building regularly in development.  Add the following to your Dockerfile instead...
 
 ```Dockerfile
-FROM jshimko/meteor-launchpad:devbuild
+FROM okamitechnologies/meteor-launchpad:devbuild
 ```
 
 This isn't recommended for your final production build because it creates a much larger image, but it's a bit of a time saver when you're building often in development.  The first build you run will download/install Meteor and then every subsequent build will be able to skip that step and just build the app.
@@ -164,7 +164,7 @@ If you'd like to create a custom build for some reason, you can use the `build.s
 First, make any changes you want, then to create your custom build:
 
 ```sh
-# builds as jshimko/meteor-launchpad:latest
+# builds as okamitechnologies/meteor-launchpad:latest
 ./build.sh
 ```
 

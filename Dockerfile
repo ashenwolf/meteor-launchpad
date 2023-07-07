@@ -1,5 +1,5 @@
 FROM debian:stable
-MAINTAINER Jeremy Shimko <jeremy.shimko@gmail.com>
+MAINTAINER Sergii Gulenok <sergii.gulenok@gmail.com>
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN groupadd -r node && useradd -m -g node node
